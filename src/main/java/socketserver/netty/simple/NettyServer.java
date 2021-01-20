@@ -2,6 +2,7 @@ package socketserver.netty.simple;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
+import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelOption;
 import io.netty.channel.nio.NioEventLoopGroup;
@@ -34,6 +35,11 @@ public class NettyServer {
             //绑定一个端口并且同步
             //启动服务器
             ChannelFuture channelFuture = serverBootstrap.bind(9999).sync();
+            channelFuture.addListener((ChannelFutureListener) future -> {
+                if (channelFuture.isSuccess()){
+                    System.out.println("启动服务器端成功！");
+                }
+            });
 
             //对关闭的通道进行监听
             channelFuture.channel().closeFuture().sync();
