@@ -1,10 +1,7 @@
 package socketserver.netty.websocket;
 
 import io.netty.bootstrap.ServerBootstrap;
-import io.netty.channel.ChannelFuture;
-import io.netty.channel.ChannelInitializer;
-import io.netty.channel.ChannelOption;
-import io.netty.channel.ChannelPipeline;
+import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
@@ -14,11 +11,16 @@ import io.netty.handler.codec.string.StringDecoder;
 import io.netty.handler.codec.string.StringEncoder;
 import io.netty.handler.timeout.IdleStateHandler;
 
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.TimeUnit;
 
 public class SocketServer {
 
     private int port;
+
+    private static ConcurrentMap<String, Channel> socketConnections = new ConcurrentHashMap<>();
+    private static ConcurrentMap<String, String> lightReturnMessage = new ConcurrentHashMap<>();
 
     public SocketServer(int port){
         this.port = port;
@@ -47,7 +49,7 @@ public class SocketServer {
 
                             //===========/*pipeline.addLast("frameDecoder", new LengthFieldBasedFrameDecoder(Integer.MAX_VALUE, 0, 4, 0, 4));
                             //                            pipeline.addLast("frameEncoder", new LengthFieldPrepender(4));*/
-                            pipeline.addLast("myHandler",new SocketServerHandler());
+
                             //添加心跳监测机制
                             //long readerIdleTime 未发生读操作时间
                             // long writerIdleTime, 未发生写操作事件
@@ -57,7 +59,8 @@ public class SocketServer {
                             // * read, write, or both operation for a while.
                             //将事件传递给下一个handler 事件接收方法：userEventTiggered()
                             pipeline.addLast("heart",new IdleStateHandler(30,30,30, TimeUnit.SECONDS));
-                            pipeline.addLast("myIdlehandler",new SocketIdleHandler());
+                            pipeline.addLast("myIdlehandler",new SocketIdleHandler(socketConnections));
+                            pipeline.addLast("myHandler",new SocketServerHandler(socketConnections,lightReturnMessage));
                         }
                     });
 
