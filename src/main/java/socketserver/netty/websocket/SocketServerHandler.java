@@ -9,9 +9,9 @@ import io.netty.buffer.Unpooled;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
+import io.netty.handler.timeout.IdleStateEvent;
 
 import java.nio.charset.StandardCharsets;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
@@ -35,7 +35,7 @@ public class SocketServerHandler extends ChannelInboundHandlerAdapter {
         result.readBytes(bytemessage);
         String HexString = bytesToHexString(bytemessage);
         String basketballMessage = new String(bytemessage, StandardCharsets.UTF_8);
-        System.out.println("client msg:" + HexString);
+        System.out.println("client msg:(16进制)" + HexString);
         System.out.println("client msg:" + basketballMessage);
 
 
@@ -129,7 +129,6 @@ public class SocketServerHandler extends ChannelInboundHandlerAdapter {
         } else {
             //log.info("不明报文");
             System.out.println("不明报文！");
-
         }
     }
 
@@ -139,7 +138,7 @@ public class SocketServerHandler extends ChannelInboundHandlerAdapter {
         String Macid = getKeyByLoop(socketConnections, ctx.channel());
         if (Macid != null) {
             socketConnections.remove(Macid);
-            System.out.println("发生异常，异常设备id为：" + Macid + "  异常信息为：" + cause);
+            System.out.println("发生异常，异常设备id为：" + Macid + "  异常信息为：" + cause.getMessage());
         }
     }
 
@@ -164,18 +163,6 @@ public class SocketServerHandler extends ChannelInboundHandlerAdapter {
         }
     }
 
-    public boolean sendMsgToChannel(String Macid, byte[] lightCommand) {
-        Channel channel = socketConnections.get(Macid);
-        if (channel != null) {
-            channel.writeAndFlush(Unpooled.copiedBuffer(lightCommand));
-            System.out.println("向设备："+Macid+"  发送控制信息："+ Arrays.toString(lightCommand)+" 成功！");
-            return true;
-        }else {
-            System.out.println("灯控设备："+ Macid+"未连接！");
-            return false;
-        }
-    }
-
 
     /**
      * byte数组转String
@@ -185,8 +172,8 @@ public class SocketServerHandler extends ChannelInboundHandlerAdapter {
      */
     public String bytesToHexString(byte[] bytes) {
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < bytes.length; i++) {
-            String hex = Integer.toHexString(0xFF & bytes[i]);
+        for (byte aByte : bytes) {
+            String hex = Integer.toHexString(0xFF & aByte);
             if (hex.length() == 1) {
                 sb.append('0');
             }
@@ -205,5 +192,22 @@ public class SocketServerHandler extends ChannelInboundHandlerAdapter {
         return null;
     }
 
-
+    @Override
+    public void userEventTriggered(ChannelHandlerContext ctx, Object evt) throws Exception {
+        if (evt instanceof IdleStateEvent) {
+            IdleStateEvent event = (IdleStateEvent) evt;
+            switch (event.state()) {
+                case READER_IDLE:
+                    System.out.println("未发生读操作。");
+                    break;
+                case WRITER_IDLE:
+                    System.out.println("未发生写操作。");
+                    break;
+                case ALL_IDLE:
+                    System.out.println("超时未发生任何操作,断开连接。");
+                    ctx.close();
+                    break;
+            }
+        }
+    }
 }

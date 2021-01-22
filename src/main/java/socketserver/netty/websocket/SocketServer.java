@@ -1,6 +1,7 @@
 package socketserver.netty.websocket;
 
 import io.netty.bootstrap.ServerBootstrap;
+import io.netty.buffer.Unpooled;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
@@ -11,6 +12,7 @@ import io.netty.handler.codec.string.StringDecoder;
 import io.netty.handler.codec.string.StringEncoder;
 import io.netty.handler.timeout.IdleStateHandler;
 
+import java.util.Arrays;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.TimeUnit;
@@ -18,12 +20,14 @@ import java.util.concurrent.TimeUnit;
 public class SocketServer {
 
     private int port;
+    private int HEART_TIME_OUT;
 
     private static ConcurrentMap<String, Channel> socketConnections = new ConcurrentHashMap<>();
     private static ConcurrentMap<String, String> lightReturnMessage = new ConcurrentHashMap<>();
 
-    public SocketServer(int port){
+    public SocketServer(int port,int HEART_TIME_OUT){
         this.port = port;
+        this.HEART_TIME_OUT = HEART_TIME_OUT;
     }
 
     public void run() throws Exception {
@@ -58,8 +62,8 @@ public class SocketServer {
                             //Triggers an {@link IdleStateEvent} when a {@link Channel} has not performed
                             // * read, write, or both operation for a while.
                             //将事件传递给下一个handler 事件接收方法：userEventTiggered()
-                            pipeline.addLast("heart",new IdleStateHandler(30,30,30, TimeUnit.SECONDS));
-                            pipeline.addLast("myIdlehandler",new SocketIdleHandler(socketConnections));
+                            pipeline.addLast("heart",new IdleStateHandler(HEART_TIME_OUT,HEART_TIME_OUT,HEART_TIME_OUT, TimeUnit.SECONDS));
+                            //pipeline.addLast("myIdlehandler",new SocketIdleHandler(socketConnections));
                             pipeline.addLast("myHandler",new SocketServerHandler(socketConnections,lightReturnMessage));
                         }
                     });
@@ -75,9 +79,21 @@ public class SocketServer {
         }
     }
 
+    public boolean sendMsgToChannel(String Macid, byte[] lightCommand) {
+        Channel channel = socketConnections.get(Macid);
+        if (channel != null) {
+            channel.writeAndFlush(Unpooled.copiedBuffer(lightCommand));
+            System.out.println("向设备："+Macid+"  发送控制信息："+ Arrays.toString(lightCommand)+" 成功！");
+            return true;
+        }else {
+            System.out.println("灯控设备："+ Macid+"未连接！");
+            return false;
+        }
+    }
+
     public static void main(String[] args) throws Exception {
 
-        SocketServer socketServer = new SocketServer(9999);
+        SocketServer socketServer = new SocketServer(9999,30);
 
         socketServer.run();
 
