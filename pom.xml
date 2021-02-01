@@ -41,6 +41,13 @@
             <artifactId>httpclient</artifactId>
             <version>4.5.7</version>
         </dependency>
+
+        <!--protobuf -->
+        <dependency>
+            <groupId>com.google.protobuf</groupId>
+            <artifactId>protobuf-java</artifactId>
+            <version>3.6.1</version>
+        </dependency>
     </dependencies>
 
 </project>
