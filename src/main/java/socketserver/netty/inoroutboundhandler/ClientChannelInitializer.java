@@ -10,6 +10,7 @@ public class ClientChannelInitializer extends ChannelInitializer {
         System.out.println("channel initializer...");
         ChannelPipeline pipeline = channel.pipeline();
         pipeline.addLast("messageEncoder",new MyClientMessageToByteEncoder());
+        pipeline.addLast("decoder",new MyByteToLongDecoder());
         pipeline.addLast("clientMessagehandler",new MyClientMessagehandler());
     }
 }

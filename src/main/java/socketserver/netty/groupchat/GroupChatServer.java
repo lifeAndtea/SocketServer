@@ -50,7 +50,7 @@ public class GroupChatServer {
                             //Triggers an {@link IdleStateEvent} when a {@link Channel} has not performed
                             // * read, write, or both operation for a while.
                             //将事件传递给下一个handler 事件接收方法：userEventTiggered()
-                            pipeline.addLast("heart",new IdleStateHandler(2,5,7, TimeUnit.SECONDS));
+                            pipeline.addLast("heart",new IdleStateHandler(30,30,30, TimeUnit.SECONDS));
                             pipeline.addLast("myIdlehandler",new MyIdleHandler());
                         }
                     });

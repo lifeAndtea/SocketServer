@@ -8,5 +8,12 @@ public class MyServerMessageHandler extends SimpleChannelInboundHandler<Long> {
     protected void channelRead0(ChannelHandlerContext channelHandlerContext, Long aLong) throws Exception {
         System.out.println("server message handler ...");
         System.out.println("get message long:"+aLong);
+        channelHandlerContext.writeAndFlush(987654L);
+    }
+
+    @Override
+    public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
+        ctx.close();
+        System.out.println(cause.getMessage());
     }
 }
