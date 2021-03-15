@@ -1,16 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c59434a9-a695-4f79-8c8f-c6be0d2b9e6a" name="Default Changelist" comment="" />
+    <list default="true" id="c59434a9-a695-4f79-8c8f-c6be0d2b9e6a" name="Default Changelist" comment="about proxy">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/SocketServer.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/SockerServerApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/ComputerMonitorUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/ExcelReadTest$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/ExcelReadTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/ExcelTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/ThreadTest$MyConsumer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/ThreadTest$MyProducer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/ThreadTest$PipeTest1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/ThreadTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/UserCoupon.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/config/SwaggerConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/proxytest/CGLibProxy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/proxytest/FqyController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/proxytest/IWork.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/proxytest/JDKProxy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/proxytest/Leader.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/proxytest/TwoProxy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/codeTest/CodeRollTestFirst.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/codeTest/CodeRollTestSecond$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/codeTest/CodeRollTestSecond$GraphicsPanel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/codeTest/CodeRollTestSecond$KeyPressListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/codeTest/CodeRollTestSecond.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/cpuutils/CPUMonitorCalc.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/cpuutils/CpuByHttp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/handleServers/ClientServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/handleServers/ExucterPool.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/handleServers/HandleMessage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/handleServers/HandlerServers.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/handleServers/fileUpload/FileServers.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/handleServers/fileUpload/HandleFile.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/handleServers/fileUpload/UploadClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/handleServers/nio/test/CopyFile.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/handleServers/nio/test/NioClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/handleServers/nio/test/NioSocketServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/bufferuse/BufferUseF.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/bufferuse/BufferUseS.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/dubborpc/customer/NettyClientBootstrap.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/dubborpc/netty/NettyClient$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/dubborpc/netty/NettyClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/dubborpc/netty/NettyClientHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/dubborpc/netty/NettyServer$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/dubborpc/netty/NettyServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/dubborpc/netty/NettyServerHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/dubborpc/provider/HelloServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/dubborpc/provider/NettyServerBootstrap.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/dubborpc/publicapi/HelloService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/groupchat/ClientChatHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/groupchat/GroupChatClient$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/groupchat/GroupChatClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/groupchat/GroupChatServer$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/groupchat/GroupChatServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/groupchat/MyIdleHandler$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/groupchat/MyIdleHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/groupchat/ServerChatHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/httpserverf/HttpServerHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/httpserverf/NettyHttpServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/httpserverf/ServerInitializer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/inoroutboundhandler/ClientChannelInitializer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/inoroutboundhandler/MyByteToLongDecoder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/inoroutboundhandler/MyClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/inoroutboundhandler/MyClientMessageToByteEncoder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/inoroutboundhandler/MyClientMessagehandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/inoroutboundhandler/MyServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/inoroutboundhandler/MyServerMessageHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/inoroutboundhandler/ServerChannelInitializer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/simple/NettyClient$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/simple/NettyClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/simple/NettyClientHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/simple/NettyServer$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/simple/NettyServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/simple/NettyServerHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/test/NettyTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/test/ScheduleTask.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/websocket/BaseEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/websocket/ChannelMannger.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/websocket/FunctionCodeEnum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/websocket/HttpClientUtil$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/websocket/HttpClientUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/websocket/ServerReceiveDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/websocket/ServerSendDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/websocket/SocketHexDecoder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/websocket/SocketIdleHandler$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/websocket/SocketIdleHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/websocket/SocketServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/websocket/SocketServerHandler$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/websocket/SocketServerHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/websocket/TestObject.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/websocket/VideoSensor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/websockettest/MyTestWebSocketFrame.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/websockettest/WebSocketServer$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/socketserver/netty/websockettest/WebSocketServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/fqy/qzdtest/structednum/Node.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/sqy/SomethingTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+        <option name="userSettingsFile" value="D:\maven\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
@@ -18,24 +132,115 @@
     </option>
   </component>
   <component name="ProjectId" id="1n2fhVP1jgviwp6uZKXgZXqfBNR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="sortByType" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.4" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="qzdtest" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\qzd\Desktop\SocketServer\src\main\java" />
     </key>
+  </component>
+  <component name="RunManager" selected="Application.Leader">
+    <configuration name="Leader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fqy.qzdtest.proxytest.Leader" />
+      <module name="SocketServer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fqy.qzdtest.proxytest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Node" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fqy.qzdtest.structednum.Node" />
+      <module name="SocketServer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fqy.qzdtest.structednum.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TwoProxy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fqy.qzdtest.proxytest.TwoProxy" />
+      <module name="SocketServer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fqy.qzdtest.proxytest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SomethingTest.likeAop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SocketServer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sqy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sqy" />
+      <option name="MAIN_CLASS_NAME" value="com.sqy.SomethingTest" />
+      <option name="METHOD_NAME" value="likeAop" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SockerServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="SocketServer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fqy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fqy.SockerServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Leader" />
+        <item itemvalue="Application.TwoProxy" />
+        <item itemvalue="Spring Boot.SockerServerApplication" />
+        <item itemvalue="Application.Node" />
+        <item itemvalue="JUnit.SomethingTest.likeAop" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -48,16 +253,105 @@
       <option name="presentableId" value="Default" />
       <updated>1610593225686</updated>
       <workItem from="1610593229498" duration="375000" />
+      <workItem from="1613610055705" duration="1133000" />
+      <workItem from="1613697293657" duration="2291000" />
+      <workItem from="1614128634341" duration="5213000" />
+      <workItem from="1614925726201" duration="586000" />
+      <workItem from="1615009000261" duration="222000" />
+      <workItem from="1615190360109" duration="9958000" />
+      <workItem from="1615360859040" duration="31000" />
+      <workItem from="1615442566127" duration="16836000" />
+      <workItem from="1615770283309" duration="1623000" />
     </task>
+    <task id="LOCAL-00001" summary="about proxy">
+      <created>1615773978292</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1615773978292</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="about proxy" />
+    <option name="LAST_COMMIT_MESSAGE" value="about proxy" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="178" key="#Project_Structure" timestamp="1610593606018">
+    <state x="564" y="178" key="#Deployment" timestamp="1615774129792">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1610593606018" />
+    <state x="564" y="178" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1615774129792" />
+    <state x="552" y="178" key="#Project_Structure" timestamp="1615445175782">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1615445175782" />
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1615533397421">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1615533397421" />
+    <state x="630" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1615443399804">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="630" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1615443399804" />
+    <state x="560" y="111" key="CommitChangelistDialog2" timestamp="1615774131768">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="560" y="111" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1615774131768" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1615191422736">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1615191422736" />
+    <state width="1877" height="256" key="GridCell.Tab.0.bottom" timestamp="1615533489773">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="256" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1615533489773" />
+    <state width="1877" height="256" key="GridCell.Tab.0.center" timestamp="1615533489773">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="256" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1615533489773" />
+    <state width="1877" height="256" key="GridCell.Tab.0.left" timestamp="1615533489773">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="256" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1615533489773" />
+    <state width="1877" height="256" key="GridCell.Tab.0.right" timestamp="1615533489773">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="256" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1615533489773" />
+    <state width="1877" height="263" key="GridCell.Tab.1.bottom" timestamp="1615516207884">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="263" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1615516207884" />
+    <state width="1877" height="263" key="GridCell.Tab.1.center" timestamp="1615516207884">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="263" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1615516207884" />
+    <state width="1877" height="263" key="GridCell.Tab.1.left" timestamp="1615516207884">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="263" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1615516207884" />
+    <state width="1877" height="263" key="GridCell.Tab.1.right" timestamp="1615516207884">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="263" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1615516207884" />
+    <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1615444960313">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1615444960313" />
+    <state x="732" y="230" key="RollbackChangesDialog" timestamp="1613699525759">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="732" y="230" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1613699525759" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1615773899897">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1615773899897" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1615448535493">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1615448535493" />
   </component>
 </project>
