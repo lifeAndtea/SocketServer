@@ -15,6 +15,9 @@ public class CGLibProxy implements MethodInterceptor {
      */
     private Object targetObject;
 
+    public CGLibProxy() {
+    }
+
     public Object createProxyObject(Object obj) {
         this.targetObject = obj;
         Enhancer enhancer = new Enhancer();
@@ -38,7 +41,7 @@ public class CGLibProxy implements MethodInterceptor {
             // 检查权限
             checkPopedom();
         }
-        obj = method.invoke(targetObject, args);
+        obj = methodProxy.invokeSuper(proxy, args);
         //这个obj的引用是由CGLib给我们new出来的
         //cglib new出来以后的对象，是被代理对象的子类（继承了我们自己写的那个类）
         //OOP, 在new子类之前，实际上默认先调用了我们super()方法的，

@@ -40,9 +40,9 @@ public class SwaggerConfig {
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("后台接口文档与测试")
-                .description("https://gitee.com/wells2333/spring-microservice-exam")
-                .termsOfServiceUrl("https://gitee.com/wells2333/spring-microservice-exam")
-                .contact(new Contact("niexin","https://gitee.com/wells2333/spring-microservice-exam","1633736729@qq.com"))
+                .description("https://github.com/lifeAndtea")
+                .termsOfServiceUrl("https://github.com/lifeAndtea")
+                .contact(new Contact("bsq","https://github.com/lifeAndtea","1976409354@qq.com"))
                 .version("2.0")
                 .build();
     }
