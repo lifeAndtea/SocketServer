@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="c59434a9-a695-4f79-8c8f-c6be0d2b9e6a" name="Default Changelist" comment="about proxy">
       <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
@@ -102,6 +103,13 @@
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
+=======
+<<<<<<< Updated upstream
+    <list default="true" id="c59434a9-a695-4f79-8c8f-c6be0d2b9e6a" name="Default Changelist" comment="" />
+=======
+    <list default="true" id="c59434a9-a695-4f79-8c8f-c6be0d2b9e6a" name="Default Changelist" comment="about proxy" />
+>>>>>>> Stashed changes
+>>>>>>> myself
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -253,6 +261,11 @@
       <option name="presentableId" value="Default" />
       <updated>1610593225686</updated>
       <workItem from="1610593229498" duration="375000" />
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+=======
+>>>>>>> myself
       <workItem from="1613610055705" duration="1133000" />
       <workItem from="1613697293657" duration="2291000" />
       <workItem from="1614128634341" duration="5213000" />
@@ -261,7 +274,12 @@
       <workItem from="1615190360109" duration="9958000" />
       <workItem from="1615360859040" duration="31000" />
       <workItem from="1615442566127" duration="16836000" />
+<<<<<<< HEAD
       <workItem from="1615770283309" duration="1623000" />
+=======
+      <workItem from="1615770283309" duration="2231000" />
+>>>>>>> Stashed changes
+>>>>>>> myself
     </task>
     <task id="LOCAL-00001" summary="about proxy">
       <created>1615773978292</created>

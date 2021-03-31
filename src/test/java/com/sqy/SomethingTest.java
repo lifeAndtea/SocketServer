@@ -21,4 +21,9 @@ public class SomethingTest {
         SocketServer server = context.getBean(SocketServer.class);
         //maybe.destory();
     }
+
+    @Test
+    public void gitTest(){
+        System.out.println("hohohohohohohohoho");
+    }
 }
